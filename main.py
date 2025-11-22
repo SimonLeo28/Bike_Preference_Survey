@@ -65,9 +65,7 @@ app.layout = html.Div([
     ], style={'display': 'grid', 'gridTemplateColumns': '1fr 1fr', 'gap': '15px'})
 ])
 
-# -------------------------------
 # Interactive Callback
-# -------------------------------
 @app.callback(
     [Output('age_distribution', 'figure'),
      Output('gender_distribution', 'figure'),
@@ -137,8 +135,6 @@ def update_graphs(selected_genders, selected_ages):
 
     return fig1, fig2, fig3, fig4, fig5, fig6
 
-# -------------------------------
 # Run the App
-# -------------------------------
 if __name__ == '__main__':
     app.run(debug=True)
