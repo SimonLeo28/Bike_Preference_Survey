@@ -39,7 +39,7 @@ app.layout = html.Div([
                 placeholder='Select Gender',
                 multi=True
             ),
-        ], style={'width': '40%', 'display': 'inline-block', 'padding': '10px'}),
+        ], style={'width': '40%', 'background': 'white', 'boxShadow': '0 3px 8px rgba(0,0,0,0.1)', 'display': 'inline-block', 'padding': '10px'}),
 
         html.Div([
             html.Label("Filter by Age Group:"),
@@ -62,7 +62,7 @@ app.layout = html.Div([
         dcc.Graph(id='age_vs_type'),
         dcc.Graph(id='brand_preference'),
         dcc.Graph(id='purpose_usage'),
-    ], style={'display': 'grid', 'gridTemplateColumns': '1fr 1fr', 'gap': '15px'})
+    ], style={'display': 'grid','background': 'black', 'gridTemplateColumns': '1fr 1fr', 'gap': '15px'})
 ])
 
 # Interactive Callback
